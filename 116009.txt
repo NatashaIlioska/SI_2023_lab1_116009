@@ -1,0 +1,113 @@
+Github repo: https://github.com/NatashaIlioska/SI_2023_lab1_116009.git
+
+1. Kreiranje folder SI_2023_lab1_116009
+	mkdir SI_2023_lab1_116009
+	
+2. Folderot se inicijalizira kako lokalen repozitorium
+	git init
+	
+3. Povrzuvanje na oddalecheniot i lokalniot repozitorium
+	git remote add origin https://github.com/NatashaIlioska/SI_2023_lab1_116009.git
+
+4. Potvrda deka sme povrzani so oddalecheniot repozitorium (lista od remote repozitoriumi)
+	git remote -v
+	
+5. Kreiranje nov README.md fajl
+	echo > README.md
+
+6. Dodavanje na fajlot README.md na staging area
+	git add README.md
+
+7. Komitiranje na README.md fajlot
+	git commit -m "Initial commit"
+	
+8. Kreiranje nov SILab1.java fajl
+	echo > SILab1.java
+
+9. Dodavanje na fajlot SILab1.java na staging area
+	git add SILab1.java
+
+10. Komitiranje na SILab1.java fajlot
+	git commit -m "Add java class"
+	
+11. Sinhronizacija so oddalecheniot repozitorium
+	git push origin master
+	
+12. Kreiranje na tri novi granki
+	git branch bug1
+	git branch bug2
+	git branch bug3
+
+13. Prefrlanje na grankata bug1
+	git checkout bug1
+	
+14. Dodavanje na fajlot SILab1.java na staging area posle promeni (bug1)
+	git add SILab1.java
+
+15. Komitiranje na SILab1.java fajlot so promeni (bug1)
+	git commit -m "Fix wrong loop for reading"
+	
+16. Prefrlanje na grankata bug2
+	git checkout bug2
+	
+17. Dodavanje na fajlot SILab1.java na staging area posle promeni (bug2)
+	git add SILab1.java
+
+18. Komitiranje na SILab1.java fajlot so promeni (bug2)
+	git commit -m "Fix wrong condition in filterOddNumbers"
+	
+19. Prefrlanje na grankata bug3
+	git checkout bug3
+	
+20. Dodavanje na fajlot SILab1.java na staging area posle promeni (bug3)
+	git add SILab1.java
+
+21. Komitiranje na SILab1.java fajlot so promeni (bug3)
+	git commit -m "Fix method sumEvenNumbers"
+	
+22. Sinhronizacija na site granki so oddalecheniot repozitorium
+	git push origin bug1
+	git push origin bug2
+	git push origin bug3
+
+23. Vrati se na grankata master
+	git checkout master
+	
+24. Spojuvanje na grankata bug1 kon master
+	git merge bug1
+
+25. Sinhronizacija so oddalecheniot repozitorium
+	git push origin master
+	
+26. Spojuvanje na grankata bug2 kon master
+	git merge bug2
+
+27. Sinhronizacija so oddalecheniot repozitorium
+	git push origin master
+	
+28. Prefrlanje na grankata bug3
+	git checkout bug3
+	
+29. Rebase sprema master
+	git rebase master
+	
+30. Vrati se na grankata master
+	git checkout master
+	
+31. Spojuvanje na grankata bug3 kon master
+	git merge bug3
+	
+32. Sinhronizacija so oddalecheniot repozitorium
+	git push origin master
+	
+33. Kreiranje nov logs.txt fajl
+	echo > logs.txt
+	
+34. Kreiranje nov INDEX.txt fajl
+	echo > 116009.txt
+	
+35. Dodavanje na dvata fajla na staging area (logs.txt i 116009.txt)
+	git add --all
+
+36. Komitiranje na dvata fajla (logs.txt i 116009.txt)
+	git commit -m " Final commit"
